@@ -4,6 +4,7 @@
     export let description;
     export let imgUrl =
         "https://media-exp1.licdn.com/dms/image/C4E03AQHYMGnZBWQ50g/profile-displayphoto-shrink_400_400/0?e=1609977600&v=beta&t=8Yu5ZtuvdinF9VuyMXuJC9_iWc0PNQSUBYQjW9fu5VU";
+    let initialName = userName;
 </script>
 
 <style>
@@ -70,7 +71,7 @@
             <img src={imgUrl} alt="Photo of {userName}" />
         </div>
         <div class="user-data">
-            <h1>{userName}</h1>
+            <h1>{userName} / {initialName}</h1>
             <h2>{jobTitle}</h2>
         </div>
     </header>
