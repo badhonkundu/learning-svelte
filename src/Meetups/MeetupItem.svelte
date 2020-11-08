@@ -1,5 +1,6 @@
 <script>
   import { createEventDispatcher } from "svelte";
+
   import meetups from "./meetups-store.js";
   import Button from "../UI/Button.svelte";
   import Badge from "../UI/Badge.svelte";
@@ -78,12 +79,12 @@
   }
 </style>
 
-<article>
+<article >
   <header>
     <h1>
       {title}
       {#if isFav}
-        <Badge>FAVORITE</Badge>
+        <Badge>FAV</Badge>
       {/if}
     </h1>
     <h2>{subtitle}</h2>
